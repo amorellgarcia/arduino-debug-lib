@@ -35,6 +35,9 @@ void setup() {
 	// This should show an assert message
 	assert(a == 0);
 
+	dbgInfo(F("Debug a"));
+	dbgExpr(a);
+
 	// Streaming library is used, so you can use operator << to create complex
 	// debugging messages
 	dbgError(F("reading file, errorCode=") << errorCode << F(" (0x")
@@ -42,6 +45,10 @@ void setup() {
 
 	dbgInfo(F("Not sorted array"));
 	dbgArrayHex(modifiedArray, sizeof(modifiedArray) / sizeof(modifiedArray[0]));
+	for (int i = 0; i < sizeof(modifiedArray) / sizeof(modifiedArray[0]); ++i) {
+		dbgExpr(i);
+		dbgExpr(modifiedArray[i]);
+	}
 	dbgInfo(F("Sorted array"));
 	modifiedArray[0] = 0x01;
 	modifiedArray[1] = 0x02;

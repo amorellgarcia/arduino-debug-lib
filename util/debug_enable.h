@@ -24,6 +24,7 @@
 #define dbg(x)							_dbg(x)
 #define dbgInfo(x)						_dbgInfo(x)
 #define dbgError(x)						_dbgError(x)
+#define dbgExpr(x)						_dbgExpr(x)
 #define dbgArrayHex(x, len)				_dbgArrayHex(x, len)
 
 #define DEBUG_PGMSPACE_STRING(x, text)	_DEBUG_PGMSPACE_STRING(x, text)

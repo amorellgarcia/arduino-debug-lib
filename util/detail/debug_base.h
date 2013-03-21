@@ -57,6 +57,7 @@ namespace debug {
 	<< ::util::debug::SECTION_SEP << __func__ \
 	<< ::util::debug::SECTION_SEP << __LINE__ << \
 	::util::debug::SECTION_END << x << endl
+#define _dbgExpr(x) ::util::PrintDebug.print(F( #x "=" )); ::util::PrintDebug.println(x)
 #define _dbgArrayHex(x, len) \
 		::util::PrintDebug << F( #x ) << ::util::debug::SECTION_ARRAY; \
 		if (len > 0) { \
