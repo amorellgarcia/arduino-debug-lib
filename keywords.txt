@@ -1,0 +1,25 @@
+#######################################
+# Syntax Coloring Map for DebugLib
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+assert	KEYWORD2
+dbg	KEYWORD2
+dbgInfo	KEYWORD2
+dbgError	KEYWORD2
+dbgArrayHex	KEYWORD2
+
+DEBUG_PGMSPACE_STRING	KEYWORD2
+SET_SERIAL_DEBUG_PRINTER	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
